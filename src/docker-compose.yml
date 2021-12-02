@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  opendota.api:
+    image: ${DOCKER_REGISTRY-}opendotaapi
+    build:
+      context: .
+      dockerfile: Services/ApiOpenDota/OpenDota.Api/Dockerfile

@@ -9,6 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiOpenDota", "ApiOpenDota"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenDota.Api", "Services\ApiOpenDota\OpenDota.Api\OpenDota.Api.csproj", "{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApp", "WebApp", "{DA258B11-9EFC-4095-BD45-BE6B57943BC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenDota.FrontEnd", "WebApp\OpenDota.FrontEnd\OpenDota.FrontEnd.csproj", "{799C4474-FFD3-452B-B20E-3623F0B78408}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{459BC67E-44D1-49F3-808B-FA568C223D80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +25,14 @@ Global
 		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{799C4474-FFD3-452B-B20E-3623F0B78408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{799C4474-FFD3-452B-B20E-3623F0B78408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{799C4474-FFD3-452B-B20E-3623F0B78408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{799C4474-FFD3-452B-B20E-3623F0B78408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{459BC67E-44D1-49F3-808B-FA568C223D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{459BC67E-44D1-49F3-808B-FA568C223D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{459BC67E-44D1-49F3-808B-FA568C223D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{459BC67E-44D1-49F3-808B-FA568C223D80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -26,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{075B5FB1-227A-42B2-9C3B-0702B986ADD0} = {BBBEBBB4-E16B-4F9D-88B4-849A89FA98AF}
 		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8} = {075B5FB1-227A-42B2-9C3B-0702B986ADD0}
+		{799C4474-FFD3-452B-B20E-3623F0B78408} = {DA258B11-9EFC-4095-BD45-BE6B57943BC8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40703B09-83AA-4421-911D-F351CC32E201}
