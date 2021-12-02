@@ -3,9 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{BBBEBBB4-E16B-4F9D-88B4-849A89FA98AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiOpenDota", "ApiOpenDota", "{075B5FB1-227A-42B2-9C3B-0702B986ADD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenDota.Api", "Services\ApiOpenDota\OpenDota.Api\OpenDota.Api.csproj", "{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{075B5FB1-227A-42B2-9C3B-0702B986ADD0} = {BBBEBBB4-E16B-4F9D-88B4-849A89FA98AF}
+		{7C82E673-69B7-4E43-AA40-B55DE9FD19E8} = {075B5FB1-227A-42B2-9C3B-0702B986ADD0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {40703B09-83AA-4421-911D-F351CC32E201}
