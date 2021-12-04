@@ -6,3 +6,10 @@ services:
     build:
       context: .
       dockerfile: Services/ApiOpenDota/OpenDota.Api/Dockerfile
+
+  opendota.frontend:
+    image: ${DOCKER_REGISTRY-}opendotafrontend
+    build:
+      context: .
+      dockerfile: WebApp/OpenDota.FrontEnd/Dockerfile
+    

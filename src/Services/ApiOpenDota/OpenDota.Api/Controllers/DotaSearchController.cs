@@ -11,7 +11,7 @@ namespace OpenDota.Api.Controllers
 {
 
     [ApiController]
-    [Route("api/v1/[controller]")]
+    [Route("api/v1")]
     public class DotaSearchController : ControllerBase
     {
         private readonly DotaSearchService _service;
@@ -24,6 +24,7 @@ namespace OpenDota.Api.Controllers
         //Implementar logica
         [HttpGet]
         [ProducesResponseType(typeof(IEnumerable<PlayerRank>), (int)HttpStatusCode.OK)]
+        [Route("GetAllPlayersByRank")]
         public async Task<ActionResult<IEnumerable<PlayerRank>>> GetAllPlayersByRank()
         {
             var playersRank = await _service.GetPlayersRank();

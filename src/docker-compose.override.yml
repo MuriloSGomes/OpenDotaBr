@@ -5,4 +5,11 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
     ports:
-      - "80"
+      - "5900:80"
+  opendota.frontend:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+    - opendota.api
+    ports:
+      - "5902:80"
