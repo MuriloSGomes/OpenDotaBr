@@ -21,7 +21,7 @@ namespace OpenDota.Api.ServicesApi
             _client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 
-        public async Task<bool> HealthCheck() => await HealthCheck("status");
+        public async Task<bool> HealthCheck() => await HealthCheck("health");
 
         private async Task<bool> HealthCheck(string arg)
         {
