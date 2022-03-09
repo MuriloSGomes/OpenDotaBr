@@ -1,5 +1,3 @@
-using System;
-
 namespace OpenDota.FrontEnd.Models
 {
     public class ErrorViewModel

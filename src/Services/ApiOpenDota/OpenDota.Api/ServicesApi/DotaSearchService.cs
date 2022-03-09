@@ -3,10 +3,8 @@ using OpenDota.Api.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace OpenDota.Api.ServicesApi
@@ -28,7 +26,20 @@ namespace OpenDota.Api.ServicesApi
         }
 
         public async Task<List<PlayerRank>> GetPlayersRank() => await GetAllPlayersRank("playersByRank");
+        public async Task<List<Hero>> GetHeroes() => await GetAllHeroes("heroes");
+        private async Task<List<Hero>> GetAllHeroes(string arg)
+        {
+            var listHeroes = new List<Hero>();
+            var response = await _client.GetAsync(arg);
 
+            if (response.IsSuccessStatusCode)
+            {
+                var json = await response.Content.ReadAsStringAsync();
+                listHeroes = JsonConvert.DeserializeObject<List<Hero>>(json);
+            }
+
+            return listHeroes;
+        }
         private async Task<List<PlayerRank>> GetAllPlayersRank(string arg)
         {
             var listPlayers = new List<PlayerRank>();
