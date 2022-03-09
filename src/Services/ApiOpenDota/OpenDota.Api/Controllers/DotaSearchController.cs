@@ -1,9 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using OpenDota.Api.Entities;
 using OpenDota.Api.ServicesApi;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
@@ -29,7 +27,7 @@ namespace OpenDota.Api.Controllers
         {
             var playersRank = await _service.GetPlayersRank();
 
-            if (playersRank == null) 
+            if (playersRank == null)
                 return NotFound();
 
             return Ok(playersRank);
