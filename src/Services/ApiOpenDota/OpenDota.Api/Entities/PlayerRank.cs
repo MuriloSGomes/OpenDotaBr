@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace OpenDota.Api.Entities
+﻿namespace OpenDota.Api.Entities
 {
     public class PlayerRank
     {
